@@ -7,7 +7,7 @@ const Positions = () => {
     <>
       <h3 className="title">Positions ({positions.length})</h3>
 
-      <div className="order-table">
+      {/* <div className="order-table">
         <table>
           <tr>
             <th>Product</th>
@@ -40,7 +40,7 @@ const Positions = () => {
             );
           })}
         </table>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { VerticalGraph } from "./VerticalGraph";
+// import { VerticalGraph } from "./VerticalGraph";
 
 // import { holdings } from "../data/data";
 
 const Holdings = () => {
-  const [allHoldings, setAllHoldings] = useState([]);
+  // const [allHoldings, setAllHoldings] = useState([]);
 
-  useEffect(() => {
-    axios.get("https://zerodha-clone-backend2.onrender.com/allHoldings").then((res) => { //http://localhost:3002
-      // console.log(res.data);
-      setAllHoldings(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("https://zerodha-clone-backend2.onrender.com/allHoldings").then((res) => { //http://localhost:3002
+  //     // console.log(res.data);
+  //     setAllHoldings(res.data);
+  //   });
+  // }, []);
 
-  // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const labels = allHoldings.map((subArray) => subArray["name"]);
+  // // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  // const labels = allHoldings.map((subArray) => subArray["name"]);
 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: "Stock Price",
-        data: allHoldings.map((stock) => stock.price),
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-    ],
-  };
+  // const data = {
+  //   labels,
+  //   datasets: [
+  //     {
+  //       label: "Stock Price",
+  //       data: allHoldings.map((stock) => stock.price),
+  //       backgroundColor: "rgba(255, 99, 132, 0.5)",
+  //     },
+  //   ],
+  // };
 
   // export const data = {
   //   labels,
@@ -46,9 +46,10 @@ const Holdings = () => {
 
   return (
     <>
-      <h3 className="title">Holdings ({allHoldings.length})</h3>
+    <h3 className="title">Holdings</h3>
+      {/* <h3 className="title">Holdings ({allHoldings.length}) </h3>  */}
 
-      <div className="order-table">
+      {/* <div className="order-table">
         <table>
           <tr>
             <th>Instrument</th>
@@ -103,7 +104,7 @@ const Holdings = () => {
           <p>P&L</p>
         </div>
       </div>
-      <VerticalGraph data={data} />
+      <VerticalGraph data={data} /> */}
     </>
   );
 };
