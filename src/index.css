@@ -268,6 +268,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .menus ul {
@@ -300,6 +301,8 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   margin-left: 20px;
+  margin-bottom: 15px;
+  border-left: 1px solid;
 }
 
 .profile .avatar {
@@ -307,7 +310,7 @@ hr {
   height: 30px;
   text-align: center;
   position: relative;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: rgb(221, 139, 221);
   justify-content: center;
@@ -317,6 +320,8 @@ hr {
   display: flex;
   background: rgb(252, 229, 252);
   margin-right: 8px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .profile .username {
@@ -337,6 +342,10 @@ hr {
 .profile:hover .username {
   cursor: pointer;
   color: rgb(223, 91, 43);
+}
+
+.username {
+  margin-top: 10px;
 }
 
 .orders {
@@ -757,6 +766,7 @@ hr {
 .icon {
   transform: scale(0.7);
   color: rgb(65, 65, 65);
+  
 }
 
 .watchlist-number {
@@ -844,3 +854,133 @@ hr {
 
 
 
+/* SignUp and Login css */
+
+label {
+  font-size: 1.2rem;
+  color: #656262;
+}
+
+.Login_Body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.SignUp_Body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_container > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: rgba(0, 212, 255, 1);
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form_container input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.form_container button {
+  background-color: rgba(0, 212, 255, 1);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+span a {
+  text-decoration: none;
+  color: rgba(0, 212, 255, 1);
+}
+
+
+
+.home_page {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home_page span {
+  color: rgba(0, 212, 255, 1);
+}
+
+.Logout{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.Logout button {
+  background-color: rgb(249, 81, 3);
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  transition: ease-in 0.3s;
+  border: none;
+}
+
+.Logout button:hover {
+  background-color: black;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .home_page{
+    font-size: 1.5rem;
+  }
+  .home_page button {
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+  }
+}
